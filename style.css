@@ -1,0 +1,135 @@
+:root {
+
+    /* Primary */
+
+    --dark-cyan: hsl(185, 75%, 39%);
+    --very-dark-desaturated-blue: hsl(229, 23%, 23%);
+    --dark-grayish-blue: hsl(227, 10%, 46%);
+
+    /* Neutral */
+
+    --dark-gray: hsl(0, 0%, 59%);
+
+    /* Typography */
+
+    --font-size: 18px;
+    /* - Font size (name and stats) = 1.125rem */
+
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    display: grid;
+    place-items: center;
+    min-height: 100vh;
+
+    font-family: 'Kumbh Sans', sans-serif;
+
+    background-color: var(--dark-cyan);
+
+    background-image: url("images/bg-pattern-top.svg"),
+        url("images/bg-pattern-bottom.svg");
+    background-repeat: no-repeat;
+    background-position: right 180px bottom 300px, left 170px top 280px;
+
+}
+
+.card {
+    width: 350px;
+    border-radius: 15px;
+    overflow: hidden;
+    background-color: #fff;
+}
+
+.card__imgs {
+    position: relative;
+}
+
+.card-pattern,
+.avatar {
+    display: block;
+}
+
+.avatar {
+    position: absolute;
+    top: 100%;
+    right: 0;
+    left: 0;
+    bottom: 0;
+    margin: auto;
+    border-radius: 100%;
+    border: 6px solid #fff;
+}
+
+.user-profile {
+    margin: 5em 0 1.525em;
+    text-align: center;
+}
+
+.user {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: .65em;
+}
+
+.user__name {
+    display: inline;
+    font-size: 1.125rem;
+    color: var(--very-dark-desaturated-blue);
+}
+
+.user__age {
+    color: var(--dark-grayish-blue);
+    font-size: 1.125rem;
+    font-weight: 400;
+}
+
+.location {
+    margin-top: .625em;
+    font-size: 14px;
+    color: hsl(227, 10%, 46%);
+    font-weight: 400;
+}
+
+.user-stats {
+    border-top: 1px solid hsl(0, 7%, 82%);
+    padding: 1.5625em;
+
+    display: flex;
+    justify-content: space-around;
+}
+
+.user-stats__numbers {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.user-stats__numbers h2 {
+    color: var(--very-dark-desaturated-blue);
+    font-size: 1.125rem;
+    font-weight: 700;
+}
+
+.user-stats__numbers p {
+    color: var(--dark-grayish-blue);
+    font-size: .85rem;
+    margin-top: .3em;
+}
+
+/* MEDIA QUERY */
+
+@media (min-width: 800px) {
+    body {
+        background-image: url("images/bg-pattern-top.svg"),
+            url("images/bg-pattern-bottom.svg");
+        background-repeat: no-repeat, no-repeat;
+        background-position: left -82% bottom -65%, right -75% top -95%;
+    }
+}
