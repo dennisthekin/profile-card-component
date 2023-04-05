@@ -27,8 +27,8 @@ This is a solution to the [Profile card component challenge on Frontend Mentor](
 
 ### Links
 
-- [View solution on Frontend Mentor](https://your-solution-url.com)
-- [View live site](https://your-live-site-url.com)
+- [View solution on Frontend Mentor](https://www.frontendmentor.io/solutions/profile-card-bem-custom-properties-PjEnkNRuLf)
+- [View live site](https://profile-card-component-denniskin.vercel.app/)
 
 ## My process
 
